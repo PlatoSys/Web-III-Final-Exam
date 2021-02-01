@@ -6,7 +6,6 @@ function dataFetch(){
 
 
 function orders(data){
-    console.log(data);
     // 1
     const filtered1 = data.filter(employee => employee.company == 'Amazon' && employee.country == 'Georgia');
     const avgSalary1 = filtered1.map(employee => employee.salary).reduce((acum,empl) => acum + empl)/filtered1.length;
@@ -66,33 +65,3 @@ async function getData(){
 }
 
 getData();
-
-
-
-const employees = [
-    { name: 'Zura', salary: 1500, age: 28 },
-    { name: 'George', salary: 2000, age: 22 },
-    { name: 'Anna', salary: 1800, age: 23 },
-    { name: 'David', salary: 2500, age: 21 },
-    { name: 'Brad', salary: 2600, age: 33 },
-  ];
-  
-  // Calculate average salary for all employees
-  const avgSalary = employees.map(employee => employee.salary).reduce((acum,empl) => acum + empl)/employees.length;
-  console.log(avgSalary)
-  
-//   // Find youngest employee
-//   const youngestAge = employees.map(employee => employee.age).sort()[0];
-//   const youngest = employees.filter(employee => employee.age == youngestAge)
-//   console.log(youngest[0].name)
-  
-//   // Create new array of employees whose salary is greater than or equal 2000
-//   const emplSalary = employees.filter(employee => employee.salary >= 2000).map(empl => empl.name);
-//   console.log(emplSalary)
-
-// 10. Find and print list of all employees, which has birth hours in between 00:00AM and 12:00PM
-
-
-let test = "Fri Jun 24 1977 22:29:16 GMT+0000 (UTC)";
-let st = test.slice(16,18);
-console.log(st);
