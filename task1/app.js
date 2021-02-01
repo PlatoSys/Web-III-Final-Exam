@@ -72,8 +72,6 @@ btn.addEventListener('click',ev => {
     );
 
 
-
-
     
     let pause = document.createElement('button');
     pause.classList.add('btn');

@@ -1,6 +1,7 @@
 class City {
     constructor(cityName){
         this.cityName = cityName;
+        this.degree = 0;
     }
 
     async getWeather(){
@@ -80,7 +81,6 @@ btn.addEventListener('click',ev => {
     div.appendChild(input);
     div.append(button);
     cit.appendChild(div);
-
     
     let searcher = document.querySelector('#search');
 
@@ -99,6 +99,7 @@ function deletion(current){
     current.parentElement.remove();
     let name = current.parentElement.id;
     localStorage.removeItem(`${name}`);
+    // console.log('test')
 }
 
 
