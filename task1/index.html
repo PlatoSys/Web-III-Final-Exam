@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container {
+
+            display: flex;
+        }
+
+        .container>div {
+            margin: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .time {
+            display: flex;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .time>h1 {
+            margin: 20px;
+        }
+
+        .buttons>button {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-group mb-3">
+            <input type="text" id="hour" class="form-control" placeholder="hours" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" id="minute" class="form-control" placeholder="minutes" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="second" placeholder="second" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="main">
+
+    </div>
+    <div class="buttons">
+        <button type="button" id="start" class="btn btn-primary">Start</button>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
